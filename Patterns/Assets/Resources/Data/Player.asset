@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d63b5588545489f87ef41acbe71568e, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  PlayerStruct:
+    Player: {fileID: 0}
+    StartPosition: {x: 0, y: 0, z: 0}
+    Sprite: {fileID: 21300000, guid: 38ceccf2cc1310c4ca6fb20a2bc0ee45, type: 3}
+    Health: 10
+    Speed: 30
+  PlayerComponents:
+    PolygonCollider2D: {fileID: 0}
+    Rigidbody2D: {fileID: 0}
