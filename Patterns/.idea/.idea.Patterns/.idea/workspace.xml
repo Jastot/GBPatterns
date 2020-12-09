@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="121204a3-a8f6-49b5-aec5-debd2c192677" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletComponents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletComponents.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletStruct.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletStruct.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CollisionController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/CollisionController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ControlersInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Controllers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Controllers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/DamageToPlayerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/DamageToPlayerController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/GameContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/RotationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/RotationController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ShootingController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/ShootingController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/BulletData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/BulletData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/MainData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/MainData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions/Extensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IExecute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IExecute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInitialization.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInitialization.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ILateExecute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/ILateExecute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUserInputs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUserInputs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerComponents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerComponents.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStruct.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStruct.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputAcceleration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputAcceleration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputFire.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputFire.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputHorizontal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputHorizontal.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputVertical.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UserInput/InputVertical.cs.meta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/a5/0aabe9c7/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/36/c32502b0/SystemException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/f3/a42153b2/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/MoveController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/InputInitialization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/ControlersInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/PlayerInitialization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Data/MainData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/Controllers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Data/InteractiveData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/GameController/GameController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Player/PlayerComponents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Data/PlayerData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Interfaces/ICleanData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Player/PlayerStruct.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Interfaces/IInitialization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Interfaces/IController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Interfaces/IExecute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Interfaces/IUserInputs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Player/PlayerModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/UserInput/InputVertical.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/UserInput/InputHorizontal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/15/5b782c02/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Data/PlayerPrefsData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/GamePoolContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Extensions/Extensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Player/PlayerFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Controllers/InputController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ae/c4a27ee8/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/96/bc7a481f/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../MazeBallGeorgyCH/MazeBall/Assets/Scripts/MazeBall/Managers/AxisManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlersInitializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ICleanData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IExecute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IUserInputs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputVertical.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputHorizontal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Controllers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStruct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/DamageToPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ShootingController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CollisionController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletComponents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet/BulletStruct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/GameContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/BulletData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ILateExecute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MainData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerComponents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/MoveController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/RotationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AxisManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputMouse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInputButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputAcceleration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UserInput/InputFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ControlersInitializer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/InputController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lPYNYgWT3XORUR28UaGcyPCXwL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.349689" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.2999309" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11800">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="11800" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="121204a3-a8f6-49b5-aec5-debd2c192677" name="Default Changelist" comment="" />
+      <created>1607500153959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607500153959</updated>
+      <workItem from="1607500156671" duration="1464000" />
+      <workItem from="1607501894285" duration="10178000" />
+      <workItem from="1607525121301" duration="9508000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="450" height="464" key="DebuggerActiveHint" timestamp="1607526630036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="450" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1607526630036" />
+    <state width="1478" height="285" key="GridCell.Tab.0.bottom" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.0.center" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.0.left" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.0.right" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.1.bottom" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.1.center" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.1.left" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.1.right" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.2.bottom" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.2.center" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.2.left" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.2.right" timestamp="1607536204796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607536204796" />
+    <state width="1478" height="285" key="GridCell.Tab.3.bottom" timestamp="1607536204797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607536204797" />
+    <state width="1478" height="285" key="GridCell.Tab.3.center" timestamp="1607536204797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1607536204797" />
+    <state width="1478" height="285" key="GridCell.Tab.3.left" timestamp="1607536204797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1607536204797" />
+    <state width="1478" height="285" key="GridCell.Tab.3.right" timestamp="1607536204797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="285" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1607536204797" />
+    <state x="601" y="113" key="RiderGenerateDialog" timestamp="1607533922244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="601" y="113" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1607533922244" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607506611709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1607506611709" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerInitialization.cs</url>
+          <line>19</line>
+          <properties documentPath="D:\Unity-Storage\Patterns\GBPatterns\Patterns\Assets\Scripts\Controllers\PlayerInitialization.cs" initialLine="19">
+            <startOffsets>
+              <option value="710" />
+            </startOffsets>
+            <endOffsets>
+              <option value="791" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
