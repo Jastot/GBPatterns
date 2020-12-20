@@ -10,7 +10,10 @@ namespace PatternsChudakovGA
         private IUserInputs _InputVertical;
         private IInputButton _InputAcseleration;
         private IInputButton _InputFire;
-        private Vector3 _Mouse;
+        
+        private IMouseInput _mouseX;
+        private IMouseInput _mouseY;
+
 
         public InputInitialization(GameContext gameContext)
         {
@@ -20,13 +23,16 @@ namespace PatternsChudakovGA
             
             _InputAcseleration = new InputAcceleration();
             _InputFire = new InputFire();
+            _mouseX = new InputMouseX();
+            _mouseY = new InputMouseY();
         }
 
-        public Vector3 GetMouse()
+        public (IMouseInput x,IMouseInput y) GetMouse()
         {
-           return _Mouse = Input.mousePosition - _gameContext.MainCamera.WorldToScreenPoint(
-                _gameContext.PlayerModel.PlayerStruct.Player.transform.position);
-           
+            (IMouseInput x, IMouseInput y) result = (_mouseX, _mouseY);
+            return result;
+// return _Mouse = Input.mousePosition - _gameContext.MainCamera.WorldToScreenPoint(
+//          _gameContext.PlayerModel.PlayerStruct.Player.transform.position);
         }
         
         public IInputButton GetAcceleration()

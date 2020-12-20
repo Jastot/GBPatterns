@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301485efdd9b4b0e945569c15233a995, type: 3}
+  m_Name: Asteroids
+  m_EditorClassIdentifier: 
+  _asteroidStructs:
+  - Asteroid: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 264f9fc257019d74a92ea3508776b6f5, type: 3}
+    Strenght: 10
+  - Asteroid: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 264f9fc257019d74a92ea3508776b6f5, type: 3}
+    Strenght: 10
+  _asteroidComponentses:
+  - PolygonCollider2D: {fileID: 0}
+    Rigidbody2D: {fileID: 0}
+  - PolygonCollider2D: {fileID: 0}
+    Rigidbody2D: {fileID: 0}
+  EnemiesStartPosotionses:
+  - StartPosition: {x: 20, y: 0, z: 0}
+  - StartPosition: {x: 0, y: 20, z: 0}
+  - StartPosition: {x: 36, y: 100, z: 0}
+  - StartPosition: {x: -100, y: -34, z: 0}
+  - StartPosition: {x: 0, y: 120, z: 0}

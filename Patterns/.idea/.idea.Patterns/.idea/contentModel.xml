@@ -3,17 +3,23 @@
   <component name="ContentModelStore">
     <e p="C:\Users\georg\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\georg\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Patterns.598664594.00" t="ExcludeRecursive" />
+    <e p="C:\Users\georg\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
     <e p="D:\Unity-Storage\Patterns\GBPatterns\Patterns" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Bullet" t="Include">
             <e p="BulletComponents.cs" t="Include" />
+            <e p="BulletCreator.cs" t="Include" />
             <e p="BulletFactory.cs" t="Include" />
             <e p="BulletModel.cs" t="Include" />
+            <e p="BulletPool.cs" t="Include" />
             <e p="BulletStruct.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
+            <e p="AsteroidController.cs" t="Include" />
+            <e p="AsteroidInitialization.cs" t="Include" />
+            <e p="BulletInitialization.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="CollisionController.cs" t="Include" />
             <e p="ControlersInitializer.cs" t="Include" />
@@ -28,25 +34,42 @@
             <e p="ShootingController.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
+            <e p="AsteroidData.cs" t="Include" />
             <e p="BulletData.cs" t="Include" />
             <e p="MainData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="Asteroids" t="Include">
+              <e p="AsteroidComponents.cs" t="Include" />
+              <e p="AsteroidFactory.cs" t="Include" />
+              <e p="AsteroidModel.cs" t="Include" />
+              <e p="AsteroidProvider.cs" t="Include" />
+              <e p="AsteroidsCreation.cs" t="Include" />
+              <e p="AsteroidsPool.cs" t="Include" />
+              <e p="AsteroidStruct.cs" t="Include" />
+            </e>
+            <e p="EnemiesStartPosotions.cs" t="Include" />
           </e>
           <e p="Extensions" t="Include">
             <e p="Extensions.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
+            <e p="IAsteroidsFactory.cs" t="Include" />
+            <e p="IBulletFactory.cs" t="Include" />
             <e p="ICleanData.cs" t="Include" />
             <e p="IController.cs" t="Include" />
             <e p="IExecute.cs" t="Include" />
             <e p="IInitialization.cs" t="Include" />
             <e p="IInputButton.cs" t="Include" />
             <e p="ILateExecute.cs" t="Include" />
+            <e p="IMouseInput.cs" t="Include" />
             <e p="IPlayerFactory.cs" t="Include" />
             <e p="IUserInputs.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
             <e p="AxisManager.cs" t="Include" />
+            <e p="PoolManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerComponents.cs" t="Include" />
@@ -58,6 +81,8 @@
             <e p="InputAcceleration.cs" t="Include" />
             <e p="InputFire.cs" t="Include" />
             <e p="InputHorizontal.cs" t="Include" />
+            <e p="InputMouseX.cs" t="Include" />
+            <e p="InputMouseY.cs" t="Include" />
             <e p="InputVertical.cs" t="Include" />
           </e>
         </e>
