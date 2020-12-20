@@ -7,5 +7,7 @@ namespace PatternsChudakovGA
     public sealed class BulletData: ScriptableObject
     {
         public List<BulletStruct> _bulletStructe;
+        public List<BulletComponents> _bulletComponents;
+
     }
 }

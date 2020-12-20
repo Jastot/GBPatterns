@@ -8,8 +8,10 @@ namespace PatternsChudakovGA
     {
         [SerializeField] private string _playerDataPath;
         [SerializeField] private string _bulletDataPath;
+        [SerializeField] private string _asteroidDataPath;
         private PlayerData _player;
         private BulletData _bullet;
+        private AsteroidData _asteroid;
 
         public PlayerData Player
         {
@@ -23,7 +25,7 @@ namespace PatternsChudakovGA
             }
         }
     
-        public BulletData Bullet
+        public BulletData BulletData
         {
             get
             {
@@ -33,6 +35,19 @@ namespace PatternsChudakovGA
                 }
 
                 return _bullet;
+            }
+        }
+
+        public AsteroidData AsteroidData
+        {
+            get
+            {
+                if (_asteroid == null)
+                {
+                    _asteroid = Load<AsteroidData>("Data/" + _asteroidDataPath);
+                }
+
+                return _asteroid;
             }
         }
         

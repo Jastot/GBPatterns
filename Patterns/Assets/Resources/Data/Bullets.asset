@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b9cf316f4f41c38758eef58dff70ef, type: 3}
   m_Name: Bullets
   m_EditorClassIdentifier: 
+  _bulletStructe:
+  - Bullet: {fileID: 0}
+    Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    Speed: 20
+  _bulletComponents:
+  - PolygonCollider2D: {fileID: 0}
+    Rigidbody2D: {fileID: 0}

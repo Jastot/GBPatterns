@@ -9,7 +9,7 @@ namespace PatternsChudakovGA
 
         public void GetButton()
         {
-            AxisOnChange.Invoke(Input.GetKeyDown(AxisManager.FIRE1));
+            AxisOnChange.Invoke(Input.GetButtonDown(AxisManager.FIRE1));
         }
     }
 }
