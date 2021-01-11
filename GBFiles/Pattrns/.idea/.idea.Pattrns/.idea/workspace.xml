@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/AirAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/AirAttack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/Fly.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/Fly.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/Levetation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/Levetation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bridge/RangeAttack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/IPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/IPoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/ModificationPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/ModificationPoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/Point.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Decorator/Point.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Task 3.meta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Asteroid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Adapter/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Facade/GameService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Flyweight/LevelCompleted.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/BackStageAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/RangeAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/Fly.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/Levetation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/AirAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bridge/Example.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Decorator/IPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Decorator/ModificationWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Decorator/Point.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Decorator/ModificationPoint.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Decorator/Example.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1ie46dTaFKVMP6XiiGtdSalAgvM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502567" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30005705" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="" />
+      <created>1602254551837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602254551837</updated>
+      <workItem from="1602254573118" duration="5265000" />
+      <workItem from="1602322984500" duration="6039000" />
+      <workItem from="1602415810200" duration="4365000" />
+      <workItem from="1602853251394" duration="13941000" />
+      <workItem from="1603094791245" duration="6139000" />
+      <workItem from="1603286714374" duration="5853000" />
+      <workItem from="1603701740135" duration="2584000" />
+      <workItem from="1603810913127" duration="1950000" />
+      <workItem from="1603899885557" duration="4107000" />
+      <workItem from="1603960368612" duration="6818000" />
+      <workItem from="1603978379293" duration="2257000" />
+      <workItem from="1604231507738" duration="3767000" />
+      <workItem from="1608572412127" duration="4980000" />
+      <workItem from="1610379938183" duration="3692000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
