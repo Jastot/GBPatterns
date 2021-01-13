@@ -8,10 +8,17 @@ namespace Asteroids.Decorator
         private readonly Vector3 _position;
         private readonly IPoint _point;
         private readonly Quaternion _rotation;
+        private GameObject _pointGameObject;
 
         protected override Weapon AddModification(Weapon weapon)
         {
-            var point = Object.Instantiate(_point.PointModification,_position, _rotation);
+            _pointGameObject = Object.Instantiate(_point.PointModification,_position, _rotation);
+            return weapon;
+        }
+
+        protected override Weapon RemoveModification(Weapon weapon,Weapon BasicWeapon)
+        {
+            Object.Destroy(_pointGameObject);
             return weapon;
         }
 

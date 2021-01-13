@@ -124,6 +124,18 @@
             <e p="SingletonMonoBehaviour.cs" t="Include" />
             <e p="TestSingletonMonoBehaviour.cs" t="Include" />
           </e>
+          <e p="Task 3" t="Include">
+            <e p="EnemyPool.cs" t="Include" />
+            <e p="IFactory.cs" t="Include" />
+            <e p="IfantryFactory.cs" t="Include" />
+            <e p="InfoFromJson.cs" t="Include" />
+            <e p="JSONDataCollector.cs" t="Include" />
+            <e p="JsonHelper.cs" t="Include" />
+            <e p="MageFactory.cs" t="Include" />
+            <e p="MainFactory.cs" t="Include" />
+            <e p="ParseingHomework.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

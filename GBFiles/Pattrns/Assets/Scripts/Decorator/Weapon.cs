@@ -19,6 +19,11 @@ namespace Asteroids.Decorator
             _audioClip = audioClip;
         }
 
+        public AudioSource GetAudioSourse()
+        {
+            return _audioSource;
+        }
+        
         public void SetBarrelPosition(Transform barrelPosition)
         {
             _barrelPosition = barrelPosition;
@@ -39,6 +44,15 @@ namespace Asteroids.Decorator
             _audioClip = audioClip;
         }
 
+        public AudioClip GetAudioClip()
+        {
+            return _audioClip;
+        }
+
+        public Transform GetBarrelPosition()
+        {
+            return _barrelPosition;
+        }
         public void Fire()
         {
             var bullet = Object.Instantiate(_bullet.BulletInstance, _barrelPosition.position, Quaternion.identity);

@@ -26,16 +26,19 @@ namespace Asteroids.Decorator
         private void Start()
         {
             IAmmunition ammunition = new Bullet(_bullet, 3.0f);
-            var weapon = new Weapon(ammunition, _barrelPosition, 999.0f, _audioSource, _audioClip);
-
+            var Changingweapon = new Weapon(ammunition, _barrelPosition, 999.0f, _audioSource, _audioClip);
+            var BasicWeapon = new Weapon(ammunition, _barrelPosition, 999.0f, _audioSource, _audioClip);
+            
             var muffler = new Muffler(_audioClipMuffler, _volumeFireOnMuffler, _barrelPosition, _muffler);
             ModificationWeapon modificationWeapon = new ModificationMuffler(_audioSource, muffler, _barrelPositionMuffler.position);
-            modificationWeapon.ApplyModification(weapon);
-
+            modificationWeapon.ApplyModification(Changingweapon);
+            modificationWeapon.ApplyRemoveModification(Changingweapon,BasicWeapon);
+            
             var point = new Point(_point);
             modificationWeapon = new ModificationPoint(_pointPosition.position,_rotation, point);
-            modificationWeapon.ApplyModification(weapon);
+            modificationWeapon.ApplyModification(Changingweapon);
             
+            modificationWeapon.ApplyRemoveModification(Changingweapon,BasicWeapon);
             _fire = modificationWeapon;
         }
 
