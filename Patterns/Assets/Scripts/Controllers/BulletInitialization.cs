@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace PatternsChudakovGA
 {
@@ -6,19 +7,23 @@ namespace PatternsChudakovGA
     {
         private readonly BulletPool _bulletPool;
         private readonly GameContext _gameContext;
+        private readonly BulletLifeController _bulletLifeController;
 
-        public BulletInitialization(BulletPool bulletPool, GameContext gameContext)
+        public BulletInitialization(BulletPool bulletPool, GameContext gameContext, BulletLifeController bulletLifeController)
         {
             _bulletPool = bulletPool;
             _gameContext = gameContext;
+            _bulletLifeController = bulletLifeController;
         }
-        public void Initialize(float speed)
+        public void Initialize()
         {
-            var enemy = _bulletPool.GetAmmo("Bullet"); 
-            enemy.transform.position = _gameContext.PlayerModel.PlayerStruct.Player.transform.localPosition + Vector3.up;
-            enemy.transform.rotation = _gameContext.PlayerModel.PlayerStruct.Player.transform.localRotation;
+            var enemy = _bulletPool.GetAmmo("Bullet");
+            var playerTransform = _gameContext.PlayerModel.PlayerStruct.Player.transform;
+            var speed = _gameContext.BulletModels[Convert.ToInt32(_bulletPool.GiveMeName())].BulletStruct.Speed;
+            enemy.transform.localPosition = playerTransform.localPosition + playerTransform.up;
+            enemy.transform.localRotation = playerTransform.rotation;
             enemy.gameObject.SetActive(true);
-            enemy.GetComponent<Rigidbody2D>().AddForce(enemy.transform.forward * speed);
+            enemy.GetComponent<Rigidbody2D>().AddForce(enemy.transform.up * speed);
         }
     }
 }

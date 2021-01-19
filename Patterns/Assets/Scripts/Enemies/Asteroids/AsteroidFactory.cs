@@ -21,7 +21,7 @@ namespace PatternsChudakovGA
             return new GameObject("Asteroid").
                     AddSpriteRenderer(_asteroidData._asteroidStructs[index].Sprite).
                     AddPolygonCollider2D().
-                    AddRigidbody2D(0,0)
+                    AddRigidbody2D(40,0)
                 ; 
         }
     }
