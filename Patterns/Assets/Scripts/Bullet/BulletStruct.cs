@@ -8,7 +8,8 @@ namespace PatternsChudakovGA
     {
         public GameObject Bullet;
         public Sprite Sprite;
-        
         public float Speed;
+        public float MaxLifeTime;
+        public float CurrentTime;
     }
 }

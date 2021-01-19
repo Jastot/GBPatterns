@@ -9,16 +9,19 @@
         private readonly IInputButton _fireInput;
         private readonly BulletPool _bulletPool;
         private readonly GameContext _gameContext;
+        private readonly BulletLifeController _bulletLifeController;
         private BulletInitialization _bulletInitialization;
 
         private bool _isFire;
-        public ShootingController(IInputButton fireInput, BulletPool bulletPool,GameContext gameContext)
+        public ShootingController(IInputButton fireInput, BulletPool bulletPool,
+            GameContext gameContext,BulletLifeController bulletLifeController)
         {
             _fireInput = fireInput;
             _bulletPool = bulletPool;
             _gameContext = gameContext;
+            _bulletLifeController = bulletLifeController;
             _fireInput.AxisOnChange += FireAxisOnChange;
-            _bulletInitialization = new BulletInitialization(_bulletPool,_gameContext);
+            _bulletInitialization = new BulletInitialization(_bulletPool,_gameContext,_bulletLifeController);
         }
 
         public void Execute(float deltaTime)
@@ -26,9 +29,7 @@
             
             if (_isFire == true)
             {
-                var speed = deltaTime * 20;
-                            //_gamePoolContext.BulletModels[0].BulletStruct.Speed;
-                _bulletInitialization.Initialize(speed);
+                _bulletInitialization.Initialize();
             }
         }
 

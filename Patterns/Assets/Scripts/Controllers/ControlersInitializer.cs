@@ -29,14 +29,15 @@ namespace PatternsChudakovGA
             var asteroidsPool = new AsteroidsPool(_countOfAsteroids,asteroidsFactory,_gameContext); 
             var asteroidsInitialization = new AsteroidInitialization(asteroidsPool,_countOfAsteroids);
             var asteroidsController = new AsteroidController(asteroidsInitialization,_gameContext,_AsteroidsOnDisplay);
-
+            var bulletLifeController = new BulletLifeController();
+            
             _controllers = new Controllers();
             _controllers.Add(playerInitialization);
             _controllers.Add(inputInitialization);
             _controllers.Add(asteroidsController);
             
             _controllers.Add(new InputController(inputInitialization.GetInputHorVert(),inputInitialization.GetMouse(),inputInitialization.GetFire()));
-            _controllers.Add(new ShootingController(inputInitialization.GetFire(), bulletsPool, _gameContext));
+            _controllers.Add(new ShootingController(inputInitialization.GetFire(), bulletsPool, _gameContext,bulletLifeController));
             _controllers.Add(new MoveController(inputInitialization.GetInputHorVert(), _gameContext));
             _controllers.Add(new RotationController(inputInitialization.GetMouse(), _gameContext));
             _controllers.Add(new CameraController(playerInitialization.GetPlayerTransform(), _gameContext.MainCamera.transform));

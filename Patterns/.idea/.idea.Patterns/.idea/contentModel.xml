@@ -20,6 +20,7 @@
             <e p="AsteroidController.cs" t="Include" />
             <e p="AsteroidInitialization.cs" t="Include" />
             <e p="BulletInitialization.cs" t="Include" />
+            <e p="BulletLifeController.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="CollisionController.cs" t="Include" />
             <e p="ControlersInitializer.cs" t="Include" />

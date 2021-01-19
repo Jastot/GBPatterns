@@ -15,6 +15,7 @@ namespace PatternsChudakovGA
         private readonly GameContext _gameContext;
         private int _count;
         private Transform _rootPool;
+        private string picked;
         
         public BulletPool(int capacityPool,BulletFactory bulletFactory,GameContext gameContext)
         {
@@ -22,7 +23,7 @@ namespace PatternsChudakovGA
             // _bulletInitialization = new BulletInitialization();
             _bulletCreator = new BulletCreator(bulletFactory, _gameContext);
             _bulletPool = new Dictionary<string, HashSet<GameObject>>();
-            _count = 1;
+            _count = 0;
             _capacityPool = capacityPool;
             
             if (!_rootPool)
@@ -50,7 +51,7 @@ namespace PatternsChudakovGA
                 
                 for (var i = 0; i < _capacityPool; i++)
                 {
-                    var instantiate = _bulletCreator.CreateBullet(0);
+                    var instantiate = _bulletCreator.CreateBullet(0,_count);
                      ReturnToPool(instantiate.transform);
                      enemies.Add(instantiate);
                 }
@@ -58,6 +59,7 @@ namespace PatternsChudakovGA
                 GetBullet(enemies);
             }
             enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
+            picked = enemy.name;
             return enemy;
         }
         private void ReturnToPool(Transform transform)
@@ -68,6 +70,10 @@ namespace PatternsChudakovGA
             transform.SetParent(_rootPool);
         }
 
+        public string GiveMeName()
+        {
+            return picked;
+        }
         public void RemovePool()
         {
             Object.Destroy(_rootPool.gameObject);
