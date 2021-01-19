@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Геориг\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Геориг\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Pattrns.1039484864.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Геориг\Desktop\GBPatterns\GBPatterns\GBFiles\Pattrns" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Abstrac Factory" t="Include">
+            <e p="ConsoleInput.cs" t="Include" />
+            <e p="ConsoleWindow.cs" t="Include" />
+            <e p="IInput.cs" t="Include" />
+            <e p="InputFactory.cs" t="Include" />
+            <e p="IPlatform.cs" t="Include" />
+            <e p="IWindow.cs" t="Include" />
+            <e p="PCInput.cs" t="Include" />
+            <e p="PCWindow.cs" t="Include" />
+            <e p="Platform.cs" t="Include" />
+            <e p="PlatformFactory.cs" t="Include" />
+            <e p="WindowFactory.cs" t="Include" />
+          </e>
+          <e p="AccelerationMove.cs" t="Include" />
+          <e p="Adapter" t="Include">
+            <e p="AttackBullet.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="IAttack.cs" t="Include" />
+            <e p="IFire.cs" t="Include" />
+          </e>
+          <e p="Asteroid.cs" t="Include" />
+          <e p="AsteroidFactory.cs" t="Include" />
+          <e p="Bridge" t="Include">
+            <e p="AirAttack.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="Fly.cs" t="Include" />
+            <e p="IAttack.cs" t="Include" />
+            <e p="IMove.cs" t="Include" />
+            <e p="Infantry.cs" t="Include" />
+            <e p="Levetation.cs" t="Include" />
+            <e p="MagicalAttack.cs" t="Include" />
+            <e p="RangeAttack.cs" t="Include" />
+          </e>
+          <e p="Builder" t="Include">
+            <e p="Example.cs" t="Include" />
+            <e p="GameObjectBuilder.cs" t="Include" />
+            <e p="GameObjectPhysicsBuilder.cs" t="Include" />
+            <e p="GameObjectVisualBuilder.cs" t="Include" />
+          </e>
+          <e p="Composite" t="Include">
+            <e p="Detachment.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="IAttack.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
+          </e>
+          <e p="Decorator" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="IAmmunition.cs" t="Include" />
+            <e p="IFire.cs" t="Include" />
+            <e p="IMuffler.cs" t="Include" />
+            <e p="IPoint.cs" t="Include" />
+            <e p="ModificationMuffler.cs" t="Include" />
+            <e p="ModificationPoint.cs" t="Include" />
+            <e p="ModificationWeapon.cs" t="Include" />
+            <e p="Muffler.cs" t="Include" />
+            <e p="Point.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+          </e>
+          <e p="Enemy.cs" t="Include" />
+          <e p="Facade" t="Include">
+            <e p="Example.cs" t="Include" />
+            <e p="Game.cs" t="Include" />
+            <e p="GameService.cs" t="Include" />
+            <e p="Map.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="Fluent Builder" t="Include">
+            <e p="BuilderExtensions.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+          </e>
+          <e p="Flyweight" t="Include">
+            <e p="LevelCompleted.cs" t="Include" />
+          </e>
+          <e p="GameStarter.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
+          <e p="IEnemyFactory.cs" t="Include" />
+          <e p="IMove.cs" t="Include" />
+          <e p="IRotation.cs" t="Include" />
+          <e p="MoveTransform.cs" t="Include" />
+          <e p="Object Pool" t="Include">
+            <e p="EnemyPool.cs" t="Include" />
+            <e p="NameManager.cs" t="Include" />
+          </e>
+          <e p="Player.cs" t="Include" />
+          <e p="Prototype" t="Include">
+            <e p="ExamplePrototype.cs" t="Include" />
+            <e p="Hp.cs" t="Include" />
+            <e p="ObjectExtensions.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+          </e>
+          <e p="Proxy" t="Include">
+            <e p="ProxyProtection" t="Include">
+              <e p="Example.cs" t="Include" />
+              <e p="IWeapon.cs" t="Include" />
+              <e p="UnlockWeapon.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+              <e p="WeaponProxy.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RotationShip.cs" t="Include" />
+          <e p="ServiceLocator" t="Include">
+            <e p="ExampleServiceLocator.cs" t="Include" />
+            <e p="IService.cs" t="Include" />
+            <e p="Service.cs" t="Include" />
+            <e p="ServiceLocator.cs" t="Include" />
+            <e p="ServiceLocatorMonoBehaviour.cs" t="Include" />
+          </e>
+          <e p="Ship.cs" t="Include" />
+          <e p="Singleton" t="Include">
+            <e p="ExampleSingleton.cs" t="Include" />
+            <e p="Services.cs" t="Include" />
+            <e p="SingletonMonoBehaviour.cs" t="Include" />
+            <e p="TestSingletonMonoBehaviour.cs" t="Include" />
+          </e>
+          <e p="Task 3" t="Include">
+            <e p="EnemyPool.cs" t="Include" />
+            <e p="IFactory.cs" t="Include" />
+            <e p="IfantryFactory.cs" t="Include" />
+            <e p="InfoFromJson.cs" t="Include" />
+            <e p="JSONDataCollector.cs" t="Include" />
+            <e p="JsonHelper.cs" t="Include" />
+            <e p="MageFactory.cs" t="Include" />
+            <e p="MainFactory.cs" t="Include" />
+            <e p="ParseingHomework.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Pattrns.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
