@@ -27,6 +27,6 @@ MonoBehaviour:
   EnemiesStartPosotionses:
   - StartPosition: {x: 20, y: 0, z: 0}
   - StartPosition: {x: 0, y: 20, z: 0}
-  - StartPosition: {x: 36, y: 100, z: 0}
-  - StartPosition: {x: -100, y: -34, z: 0}
-  - StartPosition: {x: 0, y: 120, z: 0}
+  - StartPosition: {x: 5, y: 15, z: 0}
+  - StartPosition: {x: -30, y: 10, z: 0}
+  - StartPosition: {x: 5, y: -20, z: 0}

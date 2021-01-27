@@ -59,9 +59,16 @@ namespace PatternsChudakovGA
                 }
                 _count++;
                 GetAsteroid(enemies);
+                
             }
             enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
             return enemy;
+        }
+
+        public List<AsteroidProvider> GetAllAsteroids()
+        {
+            var listOfAsteroidProviders = _asteroidPool["Asteroid"].ToList();
+            return listOfAsteroidProviders;
         }
         private void ReturnToPool(Transform transform)
         {

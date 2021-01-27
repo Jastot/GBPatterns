@@ -37,6 +37,5 @@ namespace PatternsChudakovGA
         {
             BulletModels.Add(bulletModel);
         }
-        
     }
 }
