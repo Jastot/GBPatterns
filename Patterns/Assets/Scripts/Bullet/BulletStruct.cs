@@ -8,6 +8,7 @@ namespace PatternsChudakovGA
     {
         public GameObject Bullet;
         public Sprite Sprite;
+        public float CurrentDamage;
         public float Speed;
         public float MaxLifeTime;
         public float CurrentTime;
@@ -17,6 +18,7 @@ namespace PatternsChudakovGA
             { 
                 Bullet = this.Bullet, 
                 Sprite = this.Sprite,
+                CurrentDamage = this.CurrentTime,
                 Speed = this.Speed, 
                 MaxLifeTime = this.MaxLifeTime,
                 CurrentTime = this.CurrentTime 

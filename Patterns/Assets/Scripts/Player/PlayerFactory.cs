@@ -16,7 +16,7 @@ namespace PatternsChudakovGA
         {
             return new GameObject("Player").
                 AddSpriteRenderer(_playerData.PlayerStruct.Sprite).
-                AddPolygonCollider2D().
+                AddPolygonCollider2D(false).
                 AddRigidbody2D(20,0)
                 ;
         }

@@ -2,8 +2,8 @@
 
 namespace PatternsChudakovGA
 {
-    public interface IEnemy: IDamageble, IMove
+    public interface IEnemy
     {
-        event Action<int> OnTriggerEnterChange;
+        event Action<int,int> OnTriggerEnterChange;
     }
 }

@@ -16,11 +16,11 @@ namespace PatternsChudakovGA
             return _asteroidData;
         }
 
-        public GameObject CreateAsteroid(int index)
+        public GameObject CreateAsteroid(int index,int name)
         {
-            return new GameObject("Asteroid").
+            return new GameObject($"{name}").
                     AddSpriteRenderer(_asteroidData._asteroidStructs[index].Sprite).
-                    AddPolygonCollider2D().
+                    AddPolygonCollider2D(true).
                     AddRigidbody2D(40,0)
                 ; 
         }

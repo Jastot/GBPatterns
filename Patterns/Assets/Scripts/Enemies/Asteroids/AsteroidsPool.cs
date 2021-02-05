@@ -17,7 +17,7 @@ namespace PatternsChudakovGA
         {
             _asteroidsInitialization = new AsteroidsCreation(asteroidsFactory,gameContext);
             _asteroidPool = new Dictionary<string, HashSet<AsteroidProvider>>();
-            _count = 1;
+            _count = 0;
             _capacityPool = capacityPool;
             if (!_rootPool)
             {
@@ -53,11 +53,12 @@ namespace PatternsChudakovGA
                 
                 for (var i = 0; i < _capacityPool; i++)
                 {
-                    var instantiate = _asteroidsInitialization.CreateAsteroid(0);
+                    var instantiate = _asteroidsInitialization.CreateAsteroid(0,_count);
                     ReturnToPool(instantiate.transform);
                     enemies.Add(instantiate);
+                    _count++;
                 }
-                _count++;
+                
                 GetAsteroid(enemies);
                 
             }
@@ -67,7 +68,8 @@ namespace PatternsChudakovGA
 
         public List<AsteroidProvider> GetAllAsteroids()
         {
-            var listOfAsteroidProviders = _asteroidPool["Asteroid"].ToList();
+            GetEnemy("Asteroid");
+            List<AsteroidProvider> listOfAsteroidProviders  = _asteroidPool["Asteroid"].ToList();
             return listOfAsteroidProviders;
         }
         private void ReturnToPool(Transform transform)
@@ -80,7 +82,7 @@ namespace PatternsChudakovGA
 
         public void RemovePool()
         {
-            Object.Destroy(_rootPool.gameObject);
+            //Object.Destroy(_rootPool.gameObject);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace PatternsChudakovGA
         {
             _gameContext = new GameContext();
             _gameContext.AddCamera(Camera.main);
-            _gameContext.AddAllPositions(_data.AsteroidData.EnemiesStartPosotionses);
+            // _gameContext.AddAllPositions(_data.AsteroidData.EnemiesStartPosotionses);
             var inputInitialization = new InputInitialization(_gameContext);
             var playerFactory = new PlayerFactory(_data.Player);
             var playerInitialization = new PlayerInitialization(playerFactory,_gameContext);
@@ -50,10 +50,10 @@ namespace PatternsChudakovGA
                 playerInitialization.GetPlayerTransform(),
                 _gameContext.MainCamera.transform));
             _controllers.Add(bulletLifeController);
-            // _controllers.Add(new DamageToPlayerController(
-            //     asteroidsPool.GetAllAsteroids(),
-            //     bulletsInitialization.GetAllBulets(),
-            //     playerInitialization.GetPlayer().gameObject.GetInstanceID()));
+            _controllers.Add(new DamageToPlayerController(
+                asteroidsPool.GetAllAsteroids(),
+                _gameContext,
+                playerInitialization.GetPlayer().gameObject.GetInstanceID()));
             _controllers.Initialization();
             
             //TASK 1

@@ -19,7 +19,9 @@
         {
             if (_spawned < _onDisplay)
             { 
-                _asteroidInitialization.Initialize(_gameContext.EnemiesStartPosotionses[_spawned].StartPosition);
+                //нужно сделать инициализацию из данных структуры
+                //
+                //_asteroidInitialization.Initialize(_gameContext.EnemiesStartPosotionses[_spawned].StartPosition);
                 _spawned++;
             }
         }

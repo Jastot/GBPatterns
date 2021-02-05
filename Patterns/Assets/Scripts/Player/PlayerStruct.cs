@@ -9,8 +9,8 @@ namespace PatternsChudakovGA
         public GameObject Player;
         public Vector3 StartPosition;
         public Sprite Sprite;
-        
-        public int Health;
+        public float CollisionDamage;
+        public float Health;
         public float Speed;
         public object Clone()
         {
@@ -19,6 +19,7 @@ namespace PatternsChudakovGA
                 Player = this.Player, 
                 Sprite = this.Sprite,
                 Speed = this.Speed, 
+                CollisionDamage = this.CollisionDamage,
                 StartPosition = this.StartPosition,
                 Health = this.Health 
             };
@@ -26,7 +27,7 @@ namespace PatternsChudakovGA
 
         public void AddDamage(float damage)
         {
-            throw new NotImplementedException();
+            Health -= damage;
         }
     }
 }
