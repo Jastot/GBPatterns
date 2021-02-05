@@ -22,7 +22,6 @@
             <e p="BulletInitialization.cs" t="Include" />
             <e p="BulletLifeController.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
-            <e p="CollisionController.cs" t="Include" />
             <e p="ControlersInitializer.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
             <e p="DamageToPlayerController.cs" t="Include" />
@@ -50,7 +49,6 @@
               <e p="AsteroidsPool.cs" t="Include" />
               <e p="AsteroidStruct.cs" t="Include" />
             </e>
-            <e p="EnemiesStartPosotions.cs" t="Include" />
           </e>
           <e p="Extensions" t="Include">
             <e p="Extensions.cs" t="Include" />
@@ -59,12 +57,16 @@
             <e p="IAsteroidsFactory.cs" t="Include" />
             <e p="IBulletFactory.cs" t="Include" />
             <e p="ICleanData.cs" t="Include" />
+            <e p="ICommand.cs" t="Include" />
             <e p="IController.cs" t="Include" />
+            <e p="IDamageble.cs" t="Include" />
+            <e p="IEnemy.cs" t="Include" />
             <e p="IExecute.cs" t="Include" />
             <e p="IInitialization.cs" t="Include" />
             <e p="IInputButton.cs" t="Include" />
             <e p="ILateExecute.cs" t="Include" />
             <e p="IMouseInput.cs" t="Include" />
+            <e p="IMove.cs" t="Include" />
             <e p="IPlayerFactory.cs" t="Include" />
             <e p="IUserInputs.cs" t="Include" />
           </e>
@@ -76,6 +78,11 @@
             <e p="PlayerComponents.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
             <e p="PlayerModel.cs" t="Include" />
+            <e p="PlayerModifiers" t="Include">
+              <e p="AddHealthModifier.cs" t="Include" />
+              <e p="AddSpeedModifier.cs" t="Include" />
+              <e p="PlayerModifier.cs" t="Include" />
+            </e>
             <e p="PlayerStruct.cs" t="Include" />
           </e>
           <e p="UserInput" t="Include">

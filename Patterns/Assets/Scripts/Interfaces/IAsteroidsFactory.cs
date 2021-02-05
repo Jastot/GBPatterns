@@ -5,6 +5,6 @@ namespace PatternsChudakovGA
     public interface IAsteroidsFactory
     {
         AsteroidData GiveAsteroidData();
-        GameObject CreateAsteroid(int index);
+        GameObject CreateAsteroid(int index,int name);
     }
 }

@@ -8,17 +8,12 @@ namespace PatternsChudakovGA
         public PlayerModel PlayerModel;
         public List<BulletModel> BulletModels;
         public List<AsteroidModel> AsteroidModels;
-        public List<EnemiesStartPosotions> EnemiesStartPosotionses;
         public Camera MainCamera;
         public GameContext()
         {
             BulletModels = new List<BulletModel>();
         }
-
-        public void AddAllPositions(List<EnemiesStartPosotions> enemiesStartPosotions)
-        {
-            EnemiesStartPosotionses = enemiesStartPosotions;
-        }
+        
         public void AddPlayerModel(PlayerModel playerModel)
         {
             PlayerModel = playerModel;
@@ -37,6 +32,5 @@ namespace PatternsChudakovGA
         {
             BulletModels.Add(bulletModel);
         }
-        
     }
 }

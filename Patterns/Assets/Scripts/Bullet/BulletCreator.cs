@@ -20,11 +20,12 @@ namespace PatternsChudakovGA
             _bulletData = _bulletFactory.GiveBulletData();
             BulleStructs = _bulletData._bulletStructe;
         }
-        public GameObject CreateBullet(int type,int count)
+        public GameObject CreateBullet(int type,int name)
         {
-            _bullet = _bulletFactory.CreateBullet(type);
-            BulleStructs[type].Bullet = _bullet;
-            var bulletModel = new BulletModel(BulleStructs[type]);
+            _bullet = _bulletFactory.CreateBullet(type,name);
+            var localBulletStruct = (BulletStruct)BulleStructs[type].Clone();
+            localBulletStruct.Bullet = _bullet;
+            var bulletModel = new BulletModel(localBulletStruct);
             _spawned++;
             _gameContext.AddInteractiveModelList(bulletModel);
             return _bullet;

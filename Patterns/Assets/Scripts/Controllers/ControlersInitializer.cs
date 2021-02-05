@@ -1,5 +1,4 @@
 ﻿
-using TMPro;
 using UnityEngine;
 
 namespace PatternsChudakovGA
@@ -17,7 +16,7 @@ namespace PatternsChudakovGA
         {
             _gameContext = new GameContext();
             _gameContext.AddCamera(Camera.main);
-            _gameContext.AddAllPositions(_data.AsteroidData.EnemiesStartPosotionses);
+            // _gameContext.AddAllPositions(_data.AsteroidData.EnemiesStartPosotionses);
             var inputInitialization = new InputInitialization(_gameContext);
             var playerFactory = new PlayerFactory(_data.Player);
             var playerInitialization = new PlayerInitialization(playerFactory,_gameContext);
@@ -25,23 +24,45 @@ namespace PatternsChudakovGA
             //
             var bulletsFactory = new BulletFactory(_data.BulletData);
             var bulletsPool = new BulletPool(_countOfBullets,bulletsFactory,_gameContext);
+            var bulletLifeController = new BulletLifeController(bulletsPool);
+            //var bulletsInitialization = new BulletInitialization(bulletsPool,_gameContext,bulletLifeController);
             var asteroidsFactory = new AsteroidFactory(_data.AsteroidData);
             var asteroidsPool = new AsteroidsPool(_countOfAsteroids,asteroidsFactory,_gameContext); 
             var asteroidsInitialization = new AsteroidInitialization(asteroidsPool,_countOfAsteroids);
             var asteroidsController = new AsteroidController(asteroidsInitialization,_gameContext,_AsteroidsOnDisplay);
-            var bulletLifeController = new BulletLifeController();
             
+
             _controllers = new Controllers();
             _controllers.Add(playerInitialization);
             _controllers.Add(inputInitialization);
             _controllers.Add(asteroidsController);
             
-            _controllers.Add(new InputController(inputInitialization.GetInputHorVert(),inputInitialization.GetMouse(),inputInitialization.GetFire()));
-            _controllers.Add(new ShootingController(inputInitialization.GetFire(), bulletsPool, _gameContext,bulletLifeController));
+            _controllers.Add(new InputController(
+                inputInitialization.GetInputHorVert(),
+                inputInitialization.GetMouse(),
+                inputInitialization.GetFire()));
+            _controllers.Add(new ShootingController(inputInitialization.GetFire(),
+                bulletsPool,
+                _gameContext,bulletLifeController));
             _controllers.Add(new MoveController(inputInitialization.GetInputHorVert(), _gameContext));
             _controllers.Add(new RotationController(inputInitialization.GetMouse(), _gameContext));
-            _controllers.Add(new CameraController(playerInitialization.GetPlayerTransform(), _gameContext.MainCamera.transform));
+            _controllers.Add(new CameraController(
+                playerInitialization.GetPlayerTransform(),
+                _gameContext.MainCamera.transform));
+            _controllers.Add(bulletLifeController);
+            _controllers.Add(new DamageToPlayerController(
+                asteroidsPool.GetAllAsteroids(),
+                _gameContext,
+                playerInitialization.GetPlayer().gameObject.GetInstanceID()));
             _controllers.Initialization();
+            
+            //TASK 1
+            // var modifier = new PlayerModifier(_gameContext.PlayerModel.PlayerStruct);
+            // modifier.Add(new AddHealthModifier(_gameContext.PlayerModel.PlayerStruct,25));
+            //
+            // modifier.Add(new AddSpeedModifier(_gameContext.PlayerModel.PlayerStruct,30));
+            // modifier.Handle();
+            // Debug.Log(_gameContext.PlayerModel.PlayerStruct.Health);
         }
         
         private void Update()

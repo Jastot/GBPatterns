@@ -19,11 +19,13 @@ namespace PatternsChudakovGA
             return gameObject;
         }
 
-        public static GameObject AddPolygonCollider2D(this GameObject gameObject)
+        public static GameObject AddPolygonCollider2D(this GameObject gameObject, bool isTrigger)
         {
-            gameObject.GetOrAddComponent<PolygonCollider2D>();
+            var component = gameObject.GetOrAddComponent<PolygonCollider2D>();
+            component.isTrigger = isTrigger;
             return gameObject;
         }
+        
         public static GameObject AddSpriteRenderer(this GameObject gameObject, Sprite sprite)
         {
             var component = gameObject.GetOrAddComponent<SpriteRenderer>();

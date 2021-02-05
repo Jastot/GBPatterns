@@ -16,7 +16,7 @@ MonoBehaviour:
   - Bullet: {fileID: 0}
     Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     Speed: 100
-    MaxLifeTime: 0
+    MaxLifeTime: 2
     CurrentTime: 0
   _bulletComponents:
   - PolygonCollider2D: {fileID: 0}

@@ -15,11 +15,11 @@ namespace PatternsChudakovGA
             return _bulletData;
         }
 
-        public GameObject CreateBullet(int index)
+        public GameObject CreateBullet(int index,int name)
         {
-            return new GameObject($"{index}").
+            return new GameObject($"{name}").
                     AddSpriteRenderer(_bulletData._bulletStructe[index].Sprite).
-                    AddPolygonCollider2D().
+                    AddPolygonCollider2D(false).
                     AddRigidbody2D(1,0)
                 ; 
         }

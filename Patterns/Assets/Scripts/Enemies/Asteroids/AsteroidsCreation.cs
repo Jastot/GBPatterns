@@ -22,14 +22,18 @@ namespace PatternsChudakovGA
             
         }
 
-        public AsteroidProvider CreateAsteroid(int type)
+        public AsteroidProvider CreateAsteroid(int type,int name)
         {
-            _asteroid = _asteroidsFactory.CreateAsteroid(type);
+            _asteroid = _asteroidsFactory.CreateAsteroid(type,name);
             _asteroid.AddComponent<AsteroidProvider>();
-
-            AsteroidStruct[type].Asteroid = _asteroid;
-            var AsteroidModel = new AsteroidModel(AsteroidStruct[type]);
+            //нужно сделать спавнпоинтс.
+           
+            var localAsteroidStruct = (AsteroidStruct)AsteroidStruct[type].Clone();
+            localAsteroidStruct.Asteroid = _asteroid;
+            localAsteroidStruct.StartPosition = new Vector3(Random.Range(-10f,10f),Random.Range(-10f,10f),0); 
+            var AsteroidModel = new AsteroidModel(localAsteroidStruct);
             _spawned++;
+            _gameContext.AddAsteroidModelToList(AsteroidModel);
             return _asteroid.GetComponent<AsteroidProvider>();
         }
     

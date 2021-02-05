@@ -8,7 +8,6 @@ namespace PatternsChudakovGA
     {
         public List<AsteroidStruct> _asteroidStructs;
         public List<AsteroidComponents> _asteroidComponentses;
-        public List<EnemiesStartPosotions> EnemiesStartPosotionses;
         public int GetCountOfAsteroids()
         {
             return _asteroidStructs.Count;
