@@ -30,10 +30,10 @@ namespace PatternsChudakovGA
            
             var localAsteroidStruct = (AsteroidStruct)AsteroidStruct[type].Clone();
             localAsteroidStruct.Asteroid = _asteroid;
-            localAsteroidStruct.StartPosition = new Vector3(Random.Range(-10f,10f),Random.Range(-10f,10f),0); 
+            
             var AsteroidModel = new AsteroidModel(localAsteroidStruct);
             _spawned++;
-            _gameContext.AddAsteroidModelToList(AsteroidModel);
+            _gameContext.AddAsteroidModelToList(_asteroid.GetInstanceID(),AsteroidModel);
             return _asteroid.GetComponent<AsteroidProvider>();
         }
     

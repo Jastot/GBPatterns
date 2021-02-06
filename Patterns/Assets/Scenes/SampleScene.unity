@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 0268a0b1decf12a4898c545d3602f7d9, type: 2}
-  _countOfAsteroids: 3
+  _countOfAsteroids: 7
+  _countOfBullets: 5
   _AsteroidsOnDisplay: 5
 --- !u!4 &647743564
 Transform:

@@ -1,4 +1,6 @@
-﻿namespace PatternsChudakovGA
+﻿using UnityEngine;
+
+namespace PatternsChudakovGA
 {
     public class AsteroidController : IExecute
     {
@@ -17,13 +19,12 @@
 
         public void Execute(float deltaTime)
         {
-            if (_spawned < _onDisplay)
-            { 
-                //нужно сделать инициализацию из данных структуры
-                //
-                //_asteroidInitialization.Initialize(_gameContext.EnemiesStartPosotionses[_spawned].StartPosition);
+             if (_spawned <= _onDisplay)
+             {
+                 Debug.Log(_spawned);
+                _asteroidInitialization.Initialize();
                 _spawned++;
-            }
+             }
         }
 
     }

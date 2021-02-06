@@ -11,7 +11,6 @@ namespace PatternsChudakovGA
         public float Strenght;
         public float Speed;
         public float CollisionDamage;
-        public Vector3 StartPosition;
         public void AddDamage(float damage)
         {
             Strenght -= damage;
