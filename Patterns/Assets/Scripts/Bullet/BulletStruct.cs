@@ -18,7 +18,7 @@ namespace PatternsChudakovGA
             { 
                 Bullet = this.Bullet, 
                 Sprite = this.Sprite,
-                CurrentDamage = this.CurrentTime,
+                CurrentDamage = this.CurrentDamage,
                 Speed = this.Speed, 
                 MaxLifeTime = this.MaxLifeTime,
                 CurrentTime = this.CurrentTime 

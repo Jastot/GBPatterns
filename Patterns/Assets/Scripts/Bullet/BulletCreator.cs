@@ -27,7 +27,7 @@ namespace PatternsChudakovGA
             localBulletStruct.Bullet = _bullet;
             var bulletModel = new BulletModel(localBulletStruct);
             _spawned++;
-            _gameContext.AddInteractiveModelList(bulletModel);
+            _gameContext.AddInteractiveModelList(_bullet.GetInstanceID(),bulletModel);
             return _bullet;
         }
         public void Initialization()

@@ -15,6 +15,7 @@ MonoBehaviour:
   _bulletStructe:
   - Bullet: {fileID: 0}
     Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    CurrentDamage: 8
     Speed: 100
     MaxLifeTime: 2
     CurrentTime: 0

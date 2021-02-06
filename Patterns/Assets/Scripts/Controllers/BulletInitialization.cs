@@ -20,8 +20,8 @@ namespace PatternsChudakovGA
 
         public void Initialize()
         {
-            _bulletPool.GetAmmo("Bullet");
-            localbulletStruct = _gameContext.BulletModels[Convert.ToInt32(_bulletPool.GiveMeName())]
+            var gameObjectBullet = _bulletPool.GetAmmo("Bullet");
+            localbulletStruct = _gameContext.BulletModels[gameObjectBullet.GetInstanceID()]
                 .BulletStruct;
 
             var playerTransform = _gameContext.PlayerModel.PlayerStruct.Player.transform;

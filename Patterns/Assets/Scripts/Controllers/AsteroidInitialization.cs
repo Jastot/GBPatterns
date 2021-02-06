@@ -11,10 +11,10 @@ namespace PatternsChudakovGA
             _asteroidsPool = asteroidsPool;
         }
 
-        public void Initialize(Vector3 position)
+        public void Initialize()
         {
-            var enemy = _asteroidsPool.GetEnemy("Asteroid"); 
-            enemy.transform.position = position;
+            var enemy = _asteroidsPool.GetEnemy("Asteroid");
+            enemy.transform.position = new Vector3(Random.Range(-10f,10f),Random.Range(-10f,10f),0); ;
             enemy.gameObject.SetActive(true);
         }
         public void Initialization() { }

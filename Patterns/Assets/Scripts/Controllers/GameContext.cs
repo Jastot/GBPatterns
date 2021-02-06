@@ -6,12 +6,13 @@ namespace PatternsChudakovGA
     public sealed class GameContext
     {
         public PlayerModel PlayerModel;
-        public List<BulletModel> BulletModels;
-        public List<AsteroidModel> AsteroidModels;
+        public Dictionary<int,BulletModel> BulletModels;
+        public Dictionary<int,AsteroidModel> AsteroidModels;
         public Camera MainCamera;
         public GameContext()
         {
-            BulletModels = new List<BulletModel>();
+            BulletModels = new Dictionary<int,BulletModel>();
+            AsteroidModels = new Dictionary<int, AsteroidModel>();
         }
         
         public void AddPlayerModel(PlayerModel playerModel)
@@ -23,14 +24,14 @@ namespace PatternsChudakovGA
         {
             MainCamera = camera;
         }
-        public void AddAsteroidModelToList(AsteroidModel asteroidModel)
+        public void AddAsteroidModelToList(int id,AsteroidModel asteroidModel)
         {
-            AsteroidModels.Add(asteroidModel);
+            AsteroidModels.Add(id,asteroidModel);
         }
 
-        public void AddInteractiveModelList(BulletModel bulletModel)
+        public void AddInteractiveModelList(int id,BulletModel bulletModel)
         {
-            BulletModels.Add(bulletModel);
+            BulletModels.Add(id,bulletModel);
         }
     }
 }

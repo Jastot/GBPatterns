@@ -14,6 +14,7 @@ namespace PatternsChudakovGA
             _getEnemies = getEnemies;
             _gameContext = gameContext;
             _getInstanceID = getInstanceID;
+            
         }
         public void Initialization()
         {
@@ -24,43 +25,26 @@ namespace PatternsChudakovGA
         }
         private void EnemyOnOnTriggerEnterChange(int whatStackIn,int inWhatStackIn)
         {
-            //whatStackIn - что вызвало колизию
-            //inWhatStackIn - с кем была совершена колизия(кто отследил)
+            //whatStackIn - id, что вызвало колизию
+            //inWhatStackIn - id, с кем была совершена колизия(кто отследил)
             if (whatStackIn == _getInstanceID)
             {
-                Debug.Log("Players id: "+_getInstanceID);
-                Debug.Log("Asteroid health: " + _gameContext.AsteroidModels[inWhatStackIn].
-                    AsteroidStruct.Strenght);
-                
                 _gameContext.AsteroidModels[inWhatStackIn].AsteroidStruct.
                     AddDamage(_gameContext.PlayerModel.PlayerStruct.CollisionDamage);
                 
                 _gameContext.PlayerModel.PlayerStruct.
                     AddDamage(_gameContext.AsteroidModels[inWhatStackIn].AsteroidStruct.CollisionDamage);
-                
-                Debug.Log("Asteroid health after damage: " + _gameContext.AsteroidModels[inWhatStackIn].
-                    AsteroidStruct.Strenght);
             }
 
-            for (int i = 0; i < _gameContext.BulletModels.Count; i++)
-            {
-              if (whatStackIn == _gameContext.BulletModels[i].BulletStruct.Bullet.GetInstanceID())
-              {
-                  Debug.Log("Bullet id: " + i);
-                  Debug.Log("Asteroid health: " + _gameContext.AsteroidModels[inWhatStackIn].
-                      AsteroidStruct.Strenght);
-                  
-                  // _gameContext.AsteroidModels[inWhatStackIn].AsteroidStruct.Strenght -=
-                  //     _gameContext.BulletModels[whatStackIn].BulletStruct.CurrentDamage;
-                  _gameContext.AsteroidModels[inWhatStackIn].
-                      AsteroidStruct.AddDamage(_gameContext.BulletModels[whatStackIn].
-                          BulletStruct.CurrentDamage);
-                  
-                  Debug.Log("Asteroid health after damage: " + _gameContext.AsteroidModels[inWhatStackIn].
-                      AsteroidStruct.Strenght);
-              }  
+            foreach (var key in _gameContext.BulletModels)
+            { 
+                if (whatStackIn == key.Key)
+                {
+                    _gameContext.AsteroidModels[inWhatStackIn].
+                        AsteroidStruct.AddDamage(_gameContext.BulletModels[whatStackIn].
+                            BulletStruct.CurrentDamage);
+                }  
             }
-            
         }
         public void CleanData()
         {
