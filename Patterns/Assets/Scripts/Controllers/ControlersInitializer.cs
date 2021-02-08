@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace PatternsChudakovGA
@@ -9,8 +11,14 @@ namespace PatternsChudakovGA
         [SerializeField] private int _countOfAsteroids = 5;
         [SerializeField] private int _countOfBullets = 5;
         [SerializeField] private int _AsteroidsOnDisplay = 5;
+        [SerializeField] private List<GameHandler> _gameHandlers;
+        [SerializeField] private GameObject _textInfo;
+        [SerializeField] private GameObject _textHealth;
+        [SerializeField] private GameObject _textDamage;
         private Controllers _controllers;
         private GameContext _gameContext;
+        
+        
 
         private void Start()
         {
@@ -25,7 +33,7 @@ namespace PatternsChudakovGA
             var bulletsFactory = new BulletFactory(_data.BulletData);
             var bulletsPool = new BulletPool(_countOfBullets,bulletsFactory,_gameContext);
             var bulletLifeController = new BulletLifeController(bulletsPool);
-            //var bulletsInitialization = new BulletInitialization(bulletsPool,_gameContext,bulletLifeController);
+            
             var asteroidsFactory = new AsteroidFactory(_data.AsteroidData);
             var asteroidsPool = new AsteroidsPool(_countOfAsteroids,asteroidsFactory,_gameContext); 
             var asteroidsInitialization = new AsteroidInitialization(asteroidsPool,_countOfAsteroids);
@@ -50,10 +58,25 @@ namespace PatternsChudakovGA
                 playerInitialization.GetPlayerTransform(),
                 _gameContext.MainCamera.transform));
             _controllers.Add(bulletLifeController);
-            _controllers.Add(new DamageToPlayerController(
+            _controllers.Add(new DamageController(
                 asteroidsPool.GetAllAsteroids(),
                 _gameContext,
-                playerInitialization.GetPlayer().gameObject.GetInstanceID()));
+                playerInitialization.GetPlayer().gameObject.GetInstanceID(),
+                bulletsPool
+                ));
+
+            _controllers.Add(new AsteroidLifeController(_gameContext.AsteroidModels,asteroidsPool));
+
+            _controllers.Add(new UIController(
+                _textInfo,
+                _textHealth,
+                _textDamage,
+                asteroidsPool.GetAllAsteroids(),
+                _gameContext,
+                playerInitialization.GetPlayer().gameObject.GetInstanceID()
+                ));
+            _gameHandlers.Add(_gameContext.PlayerModel.PlayerStruct.Player.GetComponent<GameHandler>());
+            _controllers.Add(new ChainController(_gameHandlers));
             _controllers.Initialization();
             
             //TASK 1

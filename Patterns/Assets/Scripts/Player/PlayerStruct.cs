@@ -24,10 +24,14 @@ namespace PatternsChudakovGA
                 Health = this.Health 
             };
         }
+        
 
         public void AddDamage(float damage)
         {
             Health -= damage;
+            LookAtHealth.Invoke(Health,Player.GetInstanceID());
         }
+
+        public event Action<float,int> LookAtHealth;
     }
 }

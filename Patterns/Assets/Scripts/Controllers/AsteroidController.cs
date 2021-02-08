@@ -20,9 +20,8 @@ namespace PatternsChudakovGA
         public void Execute(float deltaTime)
         {
              if (_spawned <= _onDisplay)
-             {
-                 Debug.Log(_spawned);
-                _asteroidInitialization.Initialize();
+             { 
+                 _asteroidInitialization.Initialize();
                 _spawned++;
              }
         }

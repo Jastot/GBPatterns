@@ -41,7 +41,7 @@ namespace PatternsChudakovGA
                     _bulletStructs[i].CurrentTime = 0;
                     _deleteStructs.Add(_bulletStructs[i]);
                 }
-                //Debug.Log("Bullet "+i+" Hash: "+ + _bulletStructs[i].Bullet.GetHashCode());
+                
             }
 
             for (int i = 0; i < _deleteStructs.Count; i++)

@@ -26,16 +26,23 @@
 
         public void Execute(float deltaTime)
         {
-            
-            if (_isFire == true)
+            var mod = _gameContext.PlayerModel.PlayerStruct.Player.GetComponent<ChangeGun>().TripleModeIsOn();
+            if (_isFire == true && mod == true)
             {
                 _bulletInitialization.Initialize();
+                _bulletInitialization.Initialize();
+                _bulletInitialization.Initialize();
+            }
+            else
+            {
+                if(_isFire == true)
+                    _bulletInitialization.Initialize();
             }
         }
 
         public void CleanData()
         {
-           
+            _fireInput.AxisOnChange -= FireAxisOnChange;
         }
         
         private void FireAxisOnChange(bool value)
