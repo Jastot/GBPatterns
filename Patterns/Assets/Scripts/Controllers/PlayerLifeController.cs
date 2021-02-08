@@ -1,8 +1,31 @@
-﻿namespace PatternsChudakovGA
+﻿using UnityEditor;
+using UnityEngine;
+
+namespace PatternsChudakovGA
 {
-    public class PlayerLifeController:  IExecute
+    public class PlayerLifeController:  IInitialization, ICleanData
     {
-        public void Execute(float deltaTime)
+        private readonly PlayerStruct _playerStruct;
+
+        public PlayerLifeController(PlayerStruct playerStruct)
+        {
+            _playerStruct = playerStruct;
+        }
+        public void Initialization()
+        {
+            _playerStruct.LookAtHealth += PlayerStructOnLookAtHealth;
+        }
+
+        private void PlayerStructOnLookAtHealth(float health,int id)
+        {
+            
+            if (health <= 0)
+            {
+                GameObject.Destroy(_playerStruct.Player);
+            }
+        }
+
+        public void CleanData()
         {
             throw new System.NotImplementedException();
         }

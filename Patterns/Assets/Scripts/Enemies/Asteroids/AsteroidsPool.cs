@@ -72,7 +72,8 @@ namespace PatternsChudakovGA
             List<AsteroidProvider> listOfAsteroidProviders  = _asteroidPool["Asteroid"].ToList();
             return listOfAsteroidProviders;
         }
-        private void ReturnToPool(Transform transform)
+        
+        public void ReturnToPool(Transform transform)
         {
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;

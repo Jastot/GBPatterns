@@ -13,6 +13,7 @@ namespace PatternsChudakovGA
 
             _playerFactory = playerFactory;
             _player = _playerFactory.CreatePlayer();
+            _player.AddComponent<ChangeGun>();
             var _playerStruct = (PlayerStruct)_playerFactory.GivePlayerData().PlayerStruct.Clone();
             _player.transform.position = _playerStruct.StartPosition;
             _playerStruct.Player = _player;

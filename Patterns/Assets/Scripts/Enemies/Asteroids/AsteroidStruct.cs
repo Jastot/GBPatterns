@@ -14,7 +14,10 @@ namespace PatternsChudakovGA
         public void AddDamage(float damage)
         {
             Strenght -= damage;
+            LookAtHealth.Invoke(Strenght,Asteroid.GetInstanceID());
         }
+
+        public event Action<float,int> LookAtHealth;
 
         public object Clone()
         {
