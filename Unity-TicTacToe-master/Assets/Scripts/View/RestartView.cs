@@ -8,20 +8,22 @@ namespace MVVM_Chudakov
         [SerializeField]private Button _button;
         private IGameViewModel _gameViewModel;
 
-        public RestartView(IGameViewModel gameViewModel)
+        public void setGameViewModel(IGameViewModel gameViewModel)
         {
             _gameViewModel = gameViewModel;
         }
         
         public void CleanData()
         {
-            throw new System.NotImplementedException();
+            _button.onClick.RemoveAllListeners();
         }
 
         public void Initialize()
         {
-            _button.onClick.RemoveAllListeners();
-            _button.onClick.AddListener(_gameViewModel.Restart);
+            CleanData();
+            _button.onClick.AddListener(() => _gameViewModel.Restart());
         }
+        
+        
     }
 }
