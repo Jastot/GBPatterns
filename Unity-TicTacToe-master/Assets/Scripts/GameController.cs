@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -8,21 +9,25 @@ namespace MVVM_Chudakov
 
     public class GameController : MonoBehaviour
     {
-        
-        
-        
-        // ох...какое ж п...
-        // работает зато без багов.
-        
-        // public Text[] buttonList;
-        // public GameObject gameOverPanel;
-        // public Text gameOverText;
-        // public GameObject restartButton;
-        //
-        // private string playerSide;
-        // private int moveCount;
-        //
-        // void Awake()
+        [SerializeField] private GameOverView gameOverPanel;
+        [SerializeField] private RestartView restartButton;
+        [SerializeField]public buttonView[] buttonList;
+
+
+        private string playerSide;
+        private int moveCount;
+
+        private void Start()
+        {
+            TurnModel turnModel = new TurnModel();
+            GridsAndPanelsModels gridsAndPanelsModels = new GridsAndPanelsModels(buttonList,gameOverPanel,restartButton);
+            
+            GameViewModel gameViewModel = new GameViewModel(turnModel,gridsAndPanelsModels);
+            GridViewModel gridViewModel = new GridViewModel(turnModel,gridsAndPanelsModels,gameViewModel);
+            
+        }
+
+        // private void Awake()
         // {
         //     SetGameControllerReferenceOnButtons();
         //     playerSide = "X";
@@ -33,7 +38,7 @@ namespace MVVM_Chudakov
         // }
         //
         //
-        // void SetGameControllerReferenceOnButtons()
+        // public void SetGameControllerReferenceOnButtons()
         // {
         //     for (int i = 0; i < buttonList.Length; i++)
         //     {
@@ -45,91 +50,26 @@ namespace MVVM_Chudakov
         // {
         //     return playerSide;
         // }
-        //
-        // public void EndTurn()
-        // {
-        //     moveCount++;
-        //
-        //     if (buttonList[0].text == playerSide && buttonList[1].text == playerSide &&
-        //         buttonList[2].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[3].text == playerSide && buttonList[4].text == playerSide &&
-        //         buttonList[5].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[6].text == playerSide && buttonList[7].text == playerSide &&
-        //         buttonList[8].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[0].text == playerSide && buttonList[3].text == playerSide &&
-        //         buttonList[6].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[1].text == playerSide && buttonList[4].text == playerSide &&
-        //         buttonList[7].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[2].text == playerSide && buttonList[5].text == playerSide &&
-        //         buttonList[8].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[0].text == playerSide && buttonList[4].text == playerSide &&
-        //         buttonList[8].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (buttonList[2].text == playerSide && buttonList[4].text == playerSide &&
-        //         buttonList[6].text == playerSide)
-        //     {
-        //         GameOver();
-        //     }
-        //
-        //     if (moveCount >= 9)
-        //     {
-        //         SetGameOverText("Its a draw.");
-        //         ShowRestartButton(true);
-        //         SetBoardInteractable(false);
-        //
-        //     }
-        //
-        //     ChangeSides();
-        //
-        // }
-        //
-        // void GameOver()
+        // public void GameOver()
         // {
         //     SetBoardInteractable(false);
-        //     SetGameOverText(playerSide + " Wins!"); // Note the space after the first " and Wins!"
+        //     SetGameOverText(playerSide + " Wins!");
         //     ShowRestartButton(true);
         //
         // }
         //
-        // void ShowRestartButton(bool bol)
+        // public void ShowRestartButton(bool bol)
         // {
         //     restartButton.SetActive(bol);
         // }
         //
-        // void SetGameOverText(string value)
+        // public void SetGameOverText(string value)
         // {
         //     gameOverPanel.SetActive(true);
         //     gameOverText.text = value;
         // }
         //
-        // void ChangeSides()
+        // public void ChangeSides()
         // {
         //     playerSide = (playerSide == "X") ? "O" : "X"; // Note: Capital Letters for "X" and "O"
         // }
@@ -149,7 +89,7 @@ namespace MVVM_Chudakov
         //     SetBoardInteractable(true);
         // }
         //
-        // void SetBoardInteractable(bool toggle)
+        // public void SetBoardInteractable(bool toggle)
         // {
         //     for (int i = 0; i < buttonList.Length; i++)
         //     {

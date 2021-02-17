@@ -6,13 +6,19 @@ namespace MVVM_Chudakov
     public class buttonView: MonoBehaviour, IInitialize,ICleanData
     {
         public Button button;
+        [SerializeField]
         public Text buttonText;
-
+        
+        // как я понимаю в въюшке мы храним состояние
+        public TurnsState CurrentState { get; set; }
+        private int number;
+        
         private GridViewModel _gridViewModel;
 
-        public buttonView(GridViewModel gridViewModel)
+        public void addModel(GridViewModel gridViewModel, int numberInList)
         {
             _gridViewModel = gridViewModel;
+            number = numberInList;
         }
         
         public void SetState(TurnsState state)
@@ -26,23 +32,20 @@ namespace MVVM_Chudakov
                 buttonText.text = "O";
             }
         }
-        
-        // public void SetSpace()
-        // {
-        //     buttonText.text = gameController.GetPlayerSide();
-        //     button.interactable = false;
-        //     gameController.EndTurn();
-        // }
-        
+
+        public void SetZero()
+        {
+            buttonText.text = "";
+        }
         public void Initialize()
         {
-            button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => _gridViewModel.SetState(this));
+            CleanData();
+            button.onClick.AddListener(() => _gridViewModel.SetState(this,number));
         }
 
         public void CleanData()
         {
-            throw new System.NotImplementedException();
+            button.onClick.RemoveAllListeners();
         }
     }
 }

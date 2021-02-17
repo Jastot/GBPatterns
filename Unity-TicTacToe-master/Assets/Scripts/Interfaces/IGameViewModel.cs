@@ -2,7 +2,7 @@
 {
     public interface IGameViewModel
     {
-        void GameOver();
+        void GameOver(bool draw);
         void Restart();
         void ChangeSides();
     }
